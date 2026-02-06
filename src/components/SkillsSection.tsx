@@ -1,31 +1,59 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code, Server, Wrench, Layers } from "lucide-react";
+import { Code, Server, Wrench, Layers, BarChart3 } from "lucide-react";
 
 const skillCategories = [
   {
     title: "Frontend",
     icon: Code,
     color: "from-primary to-orange-500",
-    skills: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"],
+    skills: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+    ],
   },
   {
     title: "Backend",
     icon: Server,
     color: "from-primary to-secondary",
-    skills: ["Node.js", "Express", "MongoDB", "PostgreSQL", "REST APIs", "GraphQL"],
+    skills: [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "PostgreSQL",
+      "REST APIs",
+      "Authentication",
+    ],
+  },
+  {
+    title: "Data & Analytics",
+    icon: BarChart3,
+    color: "from-secondary to-emerald-400",
+    skills: [
+      "SQL",
+      "Power BI",
+      "Data Modeling",
+      "Dashboard Design",
+      "Data Analysis",
+      "Insights & Reporting",
+    ],
   },
   {
     title: "Tools & DevOps",
     icon: Wrench,
-    color: "from-secondary to-amber-400",
-    skills: ["Git", "GitHub", "Vercel", "Docker", "AWS", "CI/CD"],
-  },
-  {
-    title: "Other Skills",
-    icon: Layers,
     color: "from-orange-500 to-primary",
-    skills: ["Stripe", "Cloudinary", "Authentication", "Responsive Design", "SEO", "Agile"],
+    skills: [
+      "Git",
+      "GitHub",
+      "Vercel",
+      "Docker",
+      "AWS",
+      "CI/CD",
+    ],
   },
 ];
 
@@ -50,7 +78,7 @@ const SkillsSection = () => {
             My <span className="gradient-text">Skills</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Technologies and tools I use to bring ideas to life
+            Technologies and tools I use to build scalable, data-driven applications
           </p>
         </motion.div>
 
@@ -66,7 +94,9 @@ const SkillsSection = () => {
             >
               {/* Category Header */}
               <div className="flex items-center gap-3 mb-6">
-                <div className={`p-3 rounded-xl bg-gradient-to-br ${category.color} opacity-80 group-hover:opacity-100 transition-opacity`}>
+                <div
+                  className={`p-3 rounded-xl bg-gradient-to-br ${category.color} opacity-80 group-hover:opacity-100 transition-opacity`}
+                >
                   <category.icon className="w-5 h-5 text-background" />
                 </div>
                 <h3 className="text-xl font-display font-semibold text-foreground">

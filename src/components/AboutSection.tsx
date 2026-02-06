@@ -55,20 +55,22 @@ const AboutSection = () => {
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                I'm a motivated <span className="text-foreground font-semibold">Full Stack Developer</span> with 
-                a passion for crafting modern web applications that combine beautiful 
-                design with powerful functionality.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                Specializing in <span className="text-primary">React</span>, <span className="text-primary">Node.js</span>, 
-                and cloud technologies, I bring ideas to life with clean, 
-                maintainable code and intuitive user experiences.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                When I'm not coding, you'll find me exploring new technologies, 
-                contributing to open source, or diving deep into the latest web development trends.
-              </p>
+<p className="text-lg text-muted-foreground leading-relaxed mb-6">
+  I'm a motivated <span className="text-foreground font-semibold">Full Stack Developer</span> who builds 
+  data-driven web applications, blending clean design with scalable and reliable functionality.
+</p>
+
+<p className="text-lg text-muted-foreground leading-relaxed mb-6">
+  I specialize in <span className="text-primary">React</span>, <span className="text-primary">Node.js</span>, 
+  and modern cloud technologies, while leveraging <span className="text-primary">SQL</span> and 
+  <span className="text-primary"> Power BI</span> to create applications backed by meaningful data insights.
+</p>
+
+<p className="text-lg text-muted-foreground leading-relaxed">
+  Beyond coding, I enjoy exploring emerging technologies, improving data workflows, 
+  and continuously learning to build smarter, more impactful digital solutions.
+</p>
+
             </motion.div>
 
             {/* Feature Cards */}
