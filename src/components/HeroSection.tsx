@@ -76,30 +76,31 @@ const HeroSection = () => {
               </motion.span>
             ))}
           </motion.h1>
+{/* Subtitle */}
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.8, duration: 0.6 }}
+  className="flex items-center justify-center gap-3 mb-6"
+>
+  <Code2 className="w-6 h-6 text-primary" />
+  <h2 className="text-xl sm:text-2xl md:text-3xl font-display text-foreground">
+    Data-Driven Full Stack Developer
+  </h2>
+</motion.div>
 
-          {/* Subtitle */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.6 }}
-            className="flex items-center justify-center gap-3 mb-6"
-          >
-            <Code2 className="w-6 h-6 text-primary" />
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-display text-foreground">
-              Full Stack Developer
-            </h2>
-          </motion.div>
 
-          {/* Description */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 0.6 }}
-            className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-12"
-          >
-            Building smooth, modern, and interactive web experiences
-            with a focus on performance and user delight.
-          </motion.p>
+            {/* Description */}
+<motion.p
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1, duration: 0.6 }}
+  className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-12"
+>
+  I build modern, scalable web applications where clean user interfaces,
+  robust backend systems, and meaningful data insights come together to
+  create real impact.
+</motion.p>
 
           {/* CTA Buttons */}
           <motion.div
